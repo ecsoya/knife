@@ -16,11 +16,9 @@ import com.github.ecsoya.knife.common.swagger.annotation.EnableCustomSwagger2;
 @EnableCustomSwagger2
 @EnableRyFeignClients
 @SpringBootApplication
-public class KnifeSystemApplication
-{
-    public static void main(String[] args)
-    {
-        SpringApplication.run(KnifeSystemApplication.class, args);
-        System.out.println("Knife - 系统模块启动成功");
-    }
+public class KnifeSystemApplication {
+	public static void main(String[] args) {
+		SpringApplication.run(KnifeSystemApplication.class, args);
+		System.out.println("Knife - 系统模块启动成功");
+	}
 }

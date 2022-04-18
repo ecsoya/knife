@@ -18,32 +18,27 @@ import com.github.ecsoya.knife.system.api.domain.SysFile;
  * @author AngryRED (angryred@qq.com)
  */
 @RestController
-public class SysFileController
-{
-    private static final Logger log = LoggerFactory.getLogger(SysFileController.class);
+public class SysFileController {
+	private static final Logger log = LoggerFactory.getLogger(SysFileController.class);
 
-    @Autowired
-    private ISysFileService sysFileService;
+	@Autowired
+	private ISysFileService sysFileService;
 
-    /**
-     * 文件上传请求
-     */
-    @PostMapping("upload")
-    public R<SysFile> upload(MultipartFile file)
-    {
-        try
-        {
-            // 上传并返回访问地址
-            String url = sysFileService.uploadFile(file);
-            SysFile sysFile = new SysFile();
-            sysFile.setName(FileUtils.getName(url));
-            sysFile.setUrl(url);
-            return R.ok(sysFile);
-        }
-        catch (Exception e)
-        {
-            log.error("上传文件失败", e);
-            return R.fail(e.getMessage());
-        }
-    }
+	/**
+	 * 文件上传请求
+	 */
+	@PostMapping("upload")
+	public R<SysFile> upload(MultipartFile file) {
+		try {
+			// 上传并返回访问地址
+			String url = sysFileService.uploadFile(file);
+			SysFile sysFile = new SysFile();
+			sysFile.setName(FileUtils.getName(url));
+			sysFile.setUrl(url);
+			return R.ok(sysFile);
+		} catch (Exception e) {
+			log.error("上传文件失败", e);
+			return R.fail(e.getMessage());
+		}
+	}
 }

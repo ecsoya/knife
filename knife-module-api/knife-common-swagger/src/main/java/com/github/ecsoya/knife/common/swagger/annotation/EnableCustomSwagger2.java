@@ -6,6 +6,7 @@ import java.lang.annotation.Inherited;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
+
 import org.springframework.context.annotation.Import;
 
 import com.github.ecsoya.knife.common.swagger.config.SwaggerAutoConfiguration;
@@ -15,7 +16,6 @@ import com.github.ecsoya.knife.common.swagger.config.SwaggerAutoConfiguration;
 @Documented
 @Inherited
 @Import({ SwaggerAutoConfiguration.class })
-public @interface EnableCustomSwagger2
-{
+public @interface EnableCustomSwagger2 {
 
 }
