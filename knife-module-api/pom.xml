@@ -1,0 +1,21 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.github.ecsoya.knife</groupId>
+    <artifactId>knife</artifactId>
+    <version>0.0.1</version>
+  </parent>
+  <artifactId>knife-module-api</artifactId>
+  <packaging>pom</packaging>
+  <name>knife-module-api</name>
+  <modules>
+  	<module>knife-common-core</module>
+  	<module>knife-common-datascope</module>
+  	<module>knife-common-security</module>
+  	<module>knife-common-system</module>
+  	<module>knife-common-redis</module>
+  	<module>knife-common-datasource</module>
+  	<module>knife-common-log</module>
+  	<module>knife-common-swagger</module>
+  </modules>
+</project>

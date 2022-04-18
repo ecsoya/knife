@@ -1,0 +1,5 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.github.ecsoya.knife.common.redis.configure.RedisConfig,\
+  com.github.ecsoya.knife.common.redis.service.RedisService
+
+  

@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.github.ecsoya.knife.common.core.utils.SpringUtils
+
+  

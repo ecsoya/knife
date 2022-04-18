@@ -1,0 +1,6 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.github.ecsoya.knife.common.security.config.WebMvcConfig,\
+  com.github.ecsoya.knife.common.security.service.TokenService,\
+  com.github.ecsoya.knife.common.security.aspect.PreAuthorizeAspect,\
+  com.github.ecsoya.knife.common.security.aspect.InnerAuthAspect,\
+  com.github.ecsoya.knife.common.security.handler.GlobalExceptionHandler

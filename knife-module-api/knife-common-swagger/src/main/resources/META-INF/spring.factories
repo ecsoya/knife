@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.github.ecsoya.knife.common.swagger.config.SwaggerAutoConfiguration,\
+  com.github.ecsoya.knife.common.swagger.config.SwaggerWebConfiguration,\
+  com.github.ecsoya.knife.common.swagger.config.SwaggerBeanPostProcessor

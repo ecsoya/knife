@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.github.ecsoya.knife.system.api.factory.RemoteUserFallbackFactory,\
+  com.github.ecsoya.knife.system.api.factory.RemoteLogFallbackFactory, \
+  com.github.ecsoya.knife.system.api.factory.RemoteFileFallbackFactory
